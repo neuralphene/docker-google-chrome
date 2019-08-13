@@ -18,7 +18,7 @@ sudo docker run \
   --shm-size 4g \
   --memory 4g \
   -v /etc/localtime:/etc/localtime:ro \
-  -v $CHROME_CONFIG_DIR:$HOME/.config/google-chrome:rw \
+  -v ${CHROME_CONFIG_DIR}:${HOME}/.config/google-chrome:rw \
   --device /dev/dri \
   $NVIDIA_DEVICES \
   --name google-chrome \
